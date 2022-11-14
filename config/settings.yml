@@ -1,0 +1,7 @@
+app:
+  name: taptap
+db:
+  host: localhost
+  user: postgres
+  password: password
+  pool: 5

@@ -1,18 +1,22 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: <%= Settings.db.host %>
+  username: <%= Settings.db.user %>
+  password: <%= Settings.db.password %>
+  pool: <%= Settings.db.pool %>
 
 development:
-  <<: *default
-  database: taptap_development
+  primary:
+    <<: *default
+    database: taptap_development
 
 test:
-  <<: *default
-  database: taptap_test
+  primary:
+    <<: *default
+    database: taptap_test
 
 production:
-  <<: *default
-  database: taptap_production
-  username: taptap
-  password: <%= ENV["TAPTAP_DATABASE_PASSWORD"] %>
+  primary:
+    <<: *default
+    database: taptap_production
