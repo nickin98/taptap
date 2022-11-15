@@ -2,6 +2,6 @@ app:
   name: taptap
 db:
   host: localhost
-  user: postgres
-  password: password
+  user: nickin
+  password: 111998
   pool: 5
