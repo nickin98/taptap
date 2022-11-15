@@ -71,6 +71,7 @@ GEM
     bootsnap (1.13.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    cancancan (3.4.0)
     concurrent-ruby (1.1.10)
     config (4.1.0)
       deep_merge (~> 1.2, >= 1.2.1)
@@ -247,6 +248,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  cancancan
   config
   debug
   devise

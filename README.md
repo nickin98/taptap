@@ -8,3 +8,7 @@ create user nickin with password '111998'; alter role nickin superuser createrol
 
 local user bd:
 create user nickin with password '111998'; alter role nickin superuser createrole createdb replication;
+
+rails generate rspec:install
+
+rails generate devise:install
