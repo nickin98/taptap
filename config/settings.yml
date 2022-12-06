@@ -5,3 +5,5 @@ db:
   user: nickin
   password: 111998
   pool: 5
+devise:
+  secret_key: e062eaec3e26420b57065ae8f4c193ef175f4ef9e35c87e9cf9464108e992cc5e5c9c919ca458c204b129e224b7320a6d274da6e23d2a571fa6903188e02c24c
